@@ -4,4 +4,6 @@ RUN apk add --no-cache --virtual .build-deps \
     git \
     python
 
-CMD [ "node" ]
+WORKDIR /workspace
+
+CMD [ "/bin/sh" ]
